@@ -10,7 +10,7 @@ using namespace std;
 // Purpose: Sort ints using quicksort
 // Parameters: int* toSort - pointer to an int array
 // Returns: none, directly manipulates the array
-vector<int> insertSort(vector<int> toSort)
+void insertSort(vector<int>& toSort)
 {
 	int temp = 0;
 	int pos = 0;
@@ -38,8 +38,6 @@ vector<int> insertSort(vector<int> toSort)
 		// Insert the element being sorted
 		toSort[pos] = temp;
 	}
-
-	return toSort;
 }
 
 
@@ -53,7 +51,7 @@ int main()
 	}
 	cin.get();
 
-	toSort = insertSort(toSort);
+	insertSort(toSort);
 
 	for (int i = 0; i < toSort.size(); i++)
 	{
