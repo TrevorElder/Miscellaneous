@@ -15,7 +15,7 @@ int main()
 
 	while (true)
 	{
-		numToCheck += 1;
+		numToCheck += 2;
 		bool prime = 1;
 
 		for (int i = 0; i < primeList.size(); i++)

@@ -1,4 +1,0 @@
-﻿  PrimeNumbers.cpp
-c:\users\roi\desktop\misc\misc git repository\primenumbers\primenumbers\primenumbers.cpp(21): warning C4018: '<': signed/unsigned mismatch
-  PrimeNumbers.vcxproj -> C:\Users\Roi\Desktop\Misc\misc git repository\PrimeNumbers\Debug\PrimeNumbers.exe
-  PrimeNumbers.vcxproj -> C:\Users\Roi\Desktop\Misc\misc git repository\PrimeNumbers\Debug\PrimeNumbers.pdb (Partial PDB)
