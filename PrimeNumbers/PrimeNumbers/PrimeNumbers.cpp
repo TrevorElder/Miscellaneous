@@ -15,6 +15,7 @@ int main()
 
 	while (true)
 	{
+		// Increment by 2 to avoid checking even numbers
 		numToCheck += 2;
 		bool prime = 1;
 
