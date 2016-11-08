@@ -15,8 +15,8 @@ void insertSort(vector<int>& toSort)
 	int temp = 0;
 	int pos = 0;
 
-	// Go through elements
-	for (int i = 0; i < toSort.size(); i++)
+	// Go through elements, skip first element(one element is always sorted)
+	for (int i = 1; i < toSort.size(); i++)
 	{
 		// Set Starting position
 		pos = i;
