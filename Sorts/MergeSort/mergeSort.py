@@ -11,7 +11,6 @@ def mergeSort(toSort):
     rightPos = 0
 
 
-
 ##  Go down the tree
     if len(toSort) > 1:
         left = mergeSort(toSort[:len(toSort)//2])
@@ -22,8 +21,10 @@ def mergeSort(toSort):
 
 ##  Go up the tree
     while ( leftPos + rightPos < len(left) + len(right) ):
-        ##  I don't like the conditions of this if, will fix later
-        if not(len(left) == leftPos) and (rightPos == len(right) or left[leftPos] < right[rightPos]):
+        ##  Check that the left and right lists are not empty first
+        ##  It avoids a list index out of range error since python
+        ##  will stop checking after one failed condition
+        if not(len(left) == leftPos) and rightPos == len(right) or left[leftPos] < right[rightPos]:
             sortedList.append(left[leftPos])
             leftPos += 1
         else:
@@ -31,10 +32,7 @@ def mergeSort(toSort):
             rightPos += 1
 
 
-
     return sortedList;
-
-
 
 
 
